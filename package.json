@@ -19,6 +19,9 @@
     "node-sass": "^4.13.1",
     "pg": "^7.18.1"
   },
+  "engines": {
+    "node": "12.13.1"
+  },
   "devDependencies": {
     "nodemon": "^2.0.2"
   }
