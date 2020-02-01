@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Books Collection</title>
+  </head>
+  <body>
+  <div class="list-page">
+    <h1>List</h1>
+    <a href="/book-form" >book add</a>
+    </div>
+
+    <table>
+    {{#books}}
+        <tr>
+            <td>{{book_id}}</td>
+            <td>{{title}}</td>
+            <td>{{authors}}</td>
+            <td>
+                <a href="/book/edit/{{book_id}}">Edit</a>
+            </td>
+            <td>
+                <form method="POST" action="/books/delete/{{book_id}}">
+                    <button type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+    {{/books}}
+    </table>
+
+  </body>
+</html>

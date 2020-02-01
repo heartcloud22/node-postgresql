@@ -1,0 +1,15 @@
+@import "reset";
+@import "list-page";
+@import "book-form";
+body {
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 2rem;
+}
+table {
+  margin: 1rem;
+}
+td {
+  padding: 1rem;
+}
